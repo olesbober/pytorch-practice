@@ -10,7 +10,7 @@ device = torch.device("cuda:0") # run with GPU
 
 # create input and output data
 x = torch.linspace(-math.pi, math.pi, 2000, device=device, dtype=dtype)
-y = torch.cos(x)+torch.sin(x)
+y = torch.cos(x) + torch.sin(x)
 
 # randomly initialize weights
 a = torch.randn((), device=device, dtype=dtype)
