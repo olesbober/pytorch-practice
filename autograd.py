@@ -57,7 +57,7 @@ y_hat = y_hat.cpu().detach().numpy()
 
 # plot it against the actual y
 plt.plot(x, y, x, y_hat)
-plt.title("Initial Data and Fitted Polynomial: Manual Gradients")
+plt.title("Initial Data and Fitted Polynomial: Auto Gradients")
 plt.xlabel("x")
 plt.ylabel("y")
 plt.legend(["y", "y_hat"])
